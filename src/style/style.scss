@@ -1,0 +1,32 @@
+@import 'config';
+@import 'utils/utils';
+
+body {
+    background-color: var(--bg-color);
+    color: var(--p-color);
+    text-align: center;
+    @include box(100vw, 100vh);
+    @include flexbox($justifyContent: center, $alignItems: center);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+main > a  {
+    font-size: 30px;
+    color: var(--p-color);
+    margin: 3px;
+
+    &:hover {
+        color: var(--s-color);
+    }
+}
